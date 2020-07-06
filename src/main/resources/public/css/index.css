@@ -1,0 +1,22 @@
+body {
+    background-color: #3b6978;
+    height: 100vh;
+}
+
+.title-title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-hr{
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+}
+
+footer {
+    text-align: center;
+    margin-top: 250px;
+    width: 100%;
+    color: black;
+}

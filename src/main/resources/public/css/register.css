@@ -1,0 +1,105 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3b6978 !important;
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.field-icon {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  min-height:100%;
+   position:relative;
+}
+.register-page {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0, 0.9);
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.registartion-title {
+  color: white;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+}
+
+.input-text {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-right: 15%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.border-text {
+  width: 40%;
+  margin-left: 30%;
+  border-bottom: 1px solid green;
+}
+
+.fas {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.message {
+  color: white;
+  margin-top: 2%;
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.footer-hr{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+}
+
+#content {
+  color: red;
+}
+
+@media only screen and (max-width: 768px){
+
+#register-page {
+
+    width: 100% !important;
+    margin-left: 0 !important;
+            margin-right: 0 !important;
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+            padding: 0 !important;
+}
+.registartion-title{
+ margin: 0 !important;
+            padding: 0 !important;
+}
+.container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+}

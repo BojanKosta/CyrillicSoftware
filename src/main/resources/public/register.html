@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class = "container">
+
+  <div id="register-page" class="register-page">
+    <h1 class="registartion-title">Welcome to registration page</h1>
+
+    <div class="registerForm loginback">
+        <form class="userform" action="/api/user" method="post">
+
+            <div class="border-text">
+                <i class="fas fa-user-circle"></i>
+                <input id="name" class="input-text name" type="text" placeholder="Full name" name="fullName" required>
+            </div>
+
+            <div class="border-text">
+                <i class="fas fa-user"></i>
+                <input id="username" class="input-text username" type="text" placeholder="Username" name="userName" required>
+            </div>
+
+            <div class="border-text">
+                <i class="fas fa-lock"></i>
+                <input id="password" class="input-text password" type="password" placeholder="Password" name="password" required>
+            </div>
+            <input type="checkbox" onclick="myFunction()">Show Password
+
+            <div class="border-text">
+                <i class="fas fa-envelope"></i>
+                <input id="email" class="input-text email" type="email" placeholder="Email" name="email" required>
+            </div>
+
+            <button class="btn btn-success btn-register" type="submit">Register</button>
+        </form>
+        <p class="message">Already have an account?</p>
+        <a class="btn btn-success btn-login" href="/login">Log In</a>
+
+    </div>
+</div>
+
+<footer>
+  <hr class="footer-hr">
+  <p>Created by Bojan Todorovic 2020</p>
+</footer>
+
+</div>
+
+<script src="https://kit.fontawesome.com/3cc9cd3e65.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script type="text/javascript">
+function myFunction() {
+var x = document.getElementById("password");
+if (x.type === "password") {
+  x.type = "text";
+} else {
+  x.type = "password";
+}
+}
+</script>
+
+</body>
+
+
+</html>
