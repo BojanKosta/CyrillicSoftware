@@ -42,6 +42,9 @@ public class UserController {
         public ResponseEntity<?> getUsers(){
             List<User> users= new ArrayList<>();
             users = userService.getAllUsers();
+            if(users == null ) {
+                return new ResponseEntity<String>("There is no users", HttpStatus.OK);
+            }
             return new ResponseEntity<List<User>>(users, HttpStatus.OK);
         }
 
