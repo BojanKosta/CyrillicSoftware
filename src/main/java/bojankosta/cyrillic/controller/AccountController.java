@@ -48,4 +48,13 @@ public class AccountController {
         List<User> users = accountService.getAllUsers(account);
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }
+    
+     @GetMapping("/api/accounts/all")
+    public ResponseEntity <?> getAllAccounts() {
+        List<Account> accounts = accountService.getAllAccounts();
+        if(accounts == null ) {
+            return new ResponseEntity<String>("There is no accounts yet", HttpStatus.OK);
+        }
+        return new ResponseEntity<List<Account>>(accounts, HttpStatus.OK);
+    }
 }
