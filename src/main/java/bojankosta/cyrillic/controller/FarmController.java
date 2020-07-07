@@ -34,7 +34,7 @@ public class FarmController {
         Farm newFarm = farm;
         newFarm.setAccount(account);
         farmService.saveFarm(newFarm);
-        return new ResponseEntity<Farm>(farm, HttpStatus.CREATED);
+        return new ResponseEntity<Farm>(newFarm, HttpStatus.CREATED);
     }
 
     @GetMapping("/api/farms")
